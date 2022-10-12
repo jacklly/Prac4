@@ -8,12 +8,12 @@ FILENAME = "subject_data.txt"
 
 def main():
     data = get_data()
-    print(data)
     subject_shower(data)
 
 
 def get_data():
     """Read data from file formatted like: subject,lecturer,number of students."""
+    data = []
     input_file = open(FILENAME)
     for line in input_file:
         print(line)  # See what a line looks like
@@ -24,14 +24,14 @@ def get_data():
         parts[2] = int(parts[2])  # Make the number an integer (ignore PyCharm's warning)
         print(parts)  # See if that worked
         print("----------")
+        data.append(parts)
     input_file.close()
-    data = parts
     return data
 
 
 def subject_shower(data):
     for subject_info in data:
-        print(f"{subject_info} is taught by {subject_info} and has {subject_info} students")
+        print(f"{subject_info[0]} is taught by {subject_info[1]} and has {subject_info[2]} students")
 
 
 main()
