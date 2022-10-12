@@ -39,7 +39,6 @@ number_adder()
 def all_numbers_adder():
     with open("numbers.txt", "r") as in_file:
         text = in_file.readlines()
-        i = 0
         sum = 0
         for i in range(0, len(text)):
             sum = sum + int(text[i])
