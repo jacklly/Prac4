@@ -16,7 +16,7 @@ def colour_displayer():
     while colour_choice != "":
         try:
             print(f"{colour_choice} has the colour code: {colours[colour_choice]}")
-        except ValueError:
+        except KeyError:
             print(f"Please enter a valid colour name!")
         colour_choice = input("Please choose a colour, or leave blank to exit.\nEntry: ").lower()
     if colour_choice == "":
