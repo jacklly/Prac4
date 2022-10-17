@@ -19,9 +19,7 @@ def colour_displayer():
         except KeyError:
             print(f"Please enter a valid colour name!")
         colour_choice = input("Please choose a colour, or leave blank to exit.\nEntry: ").lower()
-    if colour_choice == "":
-        print("Thank you!")
-        quit()
 
 
 colour_displayer()
+print("Thank you!")
