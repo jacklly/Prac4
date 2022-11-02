@@ -1,7 +1,7 @@
 """
 Started: 3:00
-Finished:
-
+Finished: 3:10
+Took 10 minutes
 """
 
 
