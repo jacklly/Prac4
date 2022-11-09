@@ -14,8 +14,9 @@ def main():
             split_line = line.strip().split(",")
             guitar = Guitar(split_line[0], split_line[1], float(split_line[2]))
             guitars.append(guitar)
+    guitars.sort()
     for guitar in guitars:
         print(guitar)
-    guitars.sort()
+
 
 main()
