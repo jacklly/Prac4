@@ -21,3 +21,6 @@ def main():
     print(band)
     print("band.play()")
     print(band.play())
+
+
+main()
