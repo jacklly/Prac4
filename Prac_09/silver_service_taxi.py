@@ -21,5 +21,5 @@ class SilverServiceTaxi(Taxi):
                f" ${self.price_per_km:.2f}/km plus flagfall of ${self.flagfall:.2f}"
 
     def get_fare(self):
-        return f"${super().get_fare()+4.5}"
+        return f"${round(super().get_fare()+4.5, 1):.2f}"
 
